@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Isidora-Regular";
+  src: url("../assests/fonts/Isidora-Regular.otf");
+}
+
+@font-face {
+  font-family: "Broadway Regular";
+  src: url("../assests/fonts/Broadway Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+:root {
+  /* font */
+  --font-primary: "Inter", sans-serif;
+
+  /* colors */
+  --text-white: #fff;
+  --text-black: #000;
+  
+
+  /* font size */
+  --text-main-title: 50px;
+
+  /* space */
+  --space-horizontal: 150px;
+  --space-vertical: 100px;
+
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-black);
+}
+
+.body_lock-scroll {
+  overflow: hidden;
+  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+.x-space {
+  padding-left: var(--space-horizontal) !important;
+  padding-right: var(--space-horizontal) !important;
+}
+.y-space {
+  padding-top: var(--space-vertical) !important;
+  padding-bottom: var(--space-vertical) !important;
+}
+.t-space {
+  padding-top: var(--space-vertical) !important;
+}
+.b-space {
+  padding-bottom: var(--space-vertical) !important;
+}
+.background{
+  background-image: url("../assests/bg_image.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+}
+.logo{
+  width: 150px;
+  height: auto;
+}
+.head-text {
+  color: #fff;
+}
+.head-text h2 {
+  font-family: "Broadway Regular";
+  font-size: 40px;
+  line-height: 40px;
+}
+.head-text p {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Isidora-Regular";
+}
+.button-x-mas{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: "Isidora-Regular";
+}
+.button-x-mas img{
+  width: auto;
+  height: 20px;
+}
+.card-select-wish{
+  color:#000;
+  border-radius: 15px;
+  padding: 20px;
+}
+.card-select-wish p{
+  font-family: "Isidora-Regular";
+  font-size: 20px;
+}
+.final-form{
+  background-color: #fff;
+  border-radius: 10px;
+  height: 40px; 
+  padding: 10px 20px;
+}
+.final-form label {
+  color: #000;
+  width: max-content;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: "Isidora-Regular";
+}
+.final-form input {
+  color: #000;
+  font-size: 18px;
+  padding: 5px 0px;
+    font-family: "Isidora-Regular";
+    border: solid 1px;
+    border-bottom-color: #000;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.final-form input:focus{
+  outline: none;
+}
+@media screen and (max-width: 992px) {
+  :root{
+    --space-horizontal: 20px;
+      --space-vertical: 40px;
+  }
+    .background {
+      background-position: top left;
+    }
+}
